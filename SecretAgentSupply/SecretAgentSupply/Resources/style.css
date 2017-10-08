@@ -1,0 +1,239 @@
+/* Setting root element size */
+html {
+  font-size: 18px;
+}
+
+/* Div borders for creation visiual
+div {
+  border: 1px solid yellow;
+} */
+
+/* setting body font style and color*/
+body {
+  font-family: Helvetica;
+  color: white;
+}
+
+/* Site Container */
+.container {
+  max-width: 960px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+/* Logo */
+header {
+  background-color: black;
+}
+
+header p {
+  font-size: 1rem;
+  padding: 0.66rem 0rem 0.66rem 1rem;
+}
+
+header img {
+  height: 1.5rem;
+  padding-left: 0.5rem;
+}
+
+/* Main banner section */
+#banner {
+  height: 25rem;
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/moto.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#info {
+  position: relative;
+  top: 9rem;
+  width: 20rem;
+  background-color: black;
+  align-content: center;
+  padding: 2rem 3rem 2rem 3rem;
+  font-weight: bold;
+}
+
+#info span {
+  display: block;
+  font-size: 2rem;
+  padding-top: 0.25rem;
+}
+
+#info p {
+  font-size: 1rem;
+}
+
+/* Navigation section */
+nav {
+  background-color: firebrick;
+}
+
+nav ul{
+  padding: 0.75rem 0rem;
+  justify-content: space-between;
+}
+
+#menu {
+  display: none;
+}
+
+/* Product Information section */
+#products {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.product {
+  width: 30%;
+  height: 16rem;
+  margin-top: 3rem;
+  overflow: hidden;
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 9rem;
+  border: 4px solid black;
+  padding: 2rem 0;
+}
+
+.image img {
+  max-width: 8rem;
+}
+
+.product p {
+  background-color: black;
+  padding: 0.5rem 0rem 0.5rem 0rem;
+  text-align: center;
+}
+
+/* Location/Hours section */
+#location-hours {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+}
+
+.location span{
+  display: block;
+}
+
+span.top {
+  background-color: black;
+  padding: 1rem 0rem 1rem 2rem;
+}
+
+span.bottom {
+  color: black;
+  margin-top: 0.25rem;
+}
+
+.location {
+  width: 35%;
+}
+
+/* Footer section */
+footer {
+  background-color: black;
+  padding: 5rem 0;
+}
+
+/* Responsive design for tablets */
+@media only screen and (max-width: 1024px) {
+  html {
+    font-size: 16px;
+  }
+
+  /* Change nav display to menu */
+  ul.container {
+    display: none;
+  }
+
+  #menu {
+    display: block;
+  }
+
+  #menu li {
+    text-align: center;
+  }
+
+/* Show two product images */
+  #products {
+    flex-wrap: wrap;
+  }
+
+  .glasses {
+    display: none;
+  }
+
+  .product {
+    width: 47%;
+  }
+}
+
+/* Responsive design for Mobile Devices */
+@media only screen and (max-width: 470px) {
+    /* Set Main Banner section sizing */
+
+  #info p {
+    font-size: 0.77rem;
+  }
+
+  #info span {
+    font-size: 1rem;
+  }
+
+  #banner {
+    height: 15rem;
+  }
+
+  #info {
+    position: relative;
+    top: 10rem;
+    padding: 1rem 0rem 1.5rem 2rem;
+    width: 100%;
+  }
+
+  /* Show one product image at width of page */
+  .watch {
+    display: none;
+  }
+
+  #products {
+    justify-content: center;
+  }
+
+  .product {
+    width: 90%;
+  }
+
+  /* Location Hours Section */
+  #location-hours {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hours {
+    margin-top: 0.5rem;
+  }
+
+  .location {
+    width: 90%;
+  }
+
+
+  /* Footer Section */
+  footer p{
+    width: 100%;
+    text-align: center;
+  }
+}
